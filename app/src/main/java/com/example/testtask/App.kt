@@ -5,16 +5,6 @@ import android.media.MediaPlayer
 
 class App: Application() {
 
-    override fun onCreate() {
-        super.onCreate()
-        player  = MediaPlayer.create(this, R.raw.aces_high)
-    }
-
-    override fun onTerminate() {
-        super.onTerminate()
-        player.release()
-    }
-
     companion object{
         lateinit var player: MediaPlayer
         var isPlaying = false

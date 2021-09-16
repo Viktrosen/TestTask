@@ -51,7 +51,6 @@ class MainFragment : Fragment(R.layout.main_fragment), Runnable {
 
     private fun clicks(){
         binding.clBottomPlayer.setOnClickListener {
-            viewModel.setData(App.player.currentPosition)
             findNavController(this).navigate(R.id.action_mainFragment_to_playerFragment)
         }
         binding.ivPlay.setOnClickListener {

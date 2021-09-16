@@ -87,9 +87,4 @@ class PlayerFragment : Fragment(R.layout.player_fragment) {
         viewCoroutineScope.cancel()
         inThisFragment = false
     }
-
-    override fun onStop() {
-        super.onStop()
-        viewModel.setData(App.player.currentPosition)
-    }
 }
